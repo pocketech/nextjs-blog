@@ -6,7 +6,12 @@ import Link from 'next/link'
 const name = 'Kento Nakano'
 export const siteTitle = 'Next.js First Blog'
 
-const Layout = ({ children, home }) =>
+const Layout = ({
+  children, home
+}: {
+  children: React.ReactNode
+  home?: boolean
+}) =>
   <div className={styles.container}>
     <Head>
       <link rel="icon" href="/favicon.ico" />
